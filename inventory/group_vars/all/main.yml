@@ -60,4 +60,5 @@ shell_profile_managed: true
 # Doctor configuration
 doctor_strict: false
 doctor_ssh_hosts:
-  - github.com ## you'll want to change this
+  - github-personal
+  - github-hfd

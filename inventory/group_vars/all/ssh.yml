@@ -1,0 +1,22 @@
+---
+# ssh_identities:
+ssh_identities:
+  - name: personal
+    key_type: rsa
+    comment: "mek@mek.cc"
+    create_if_missing: false
+  - name: hfd
+    key_type: ed25519
+    comment: "halffastdevops@gmail.com"
+    create_if_missing: false
+
+# ssh_hosts:
+ssh_hosts:
+  - name: github-personal
+    hostname: github.com
+    user: git
+    identity_file: "{{ user_home }}/.ssh/id_rsa_personal"
+  - name: github-hfd
+    hostname: github.com
+    user: git
+    identity_file: "{{ user_home }}/.ssh/id_ed25519_hfd"
