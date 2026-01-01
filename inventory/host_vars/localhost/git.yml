@@ -1,0 +1,15 @@
+# inventories/host_vars/localhost/git.yml
+#
+git_repos:
+  - repo: github-personal:mek/exagconsulting.git
+    dest: "{{ user_home }}/work/web"
+    version: "master"
+    name: "Mat Kovach"
+    email: "mek@mek.cc"
+    use_structured_path: true
+  - repo: github-hfd:half-fast-devops/ansible-laptop.git
+    dest: "{{ user_home }}/work/web"
+    version: "trunk"
+    name: "Half Fast DevOps"
+    email: "halffastdevops@gmail.com"
+    use_structured_path: true
